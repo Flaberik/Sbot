@@ -72,6 +72,7 @@ def set_message(message):
 def get_message():
     return cursor.execute("SELECT * FROM messages")
 
+
 def set_time(t):
     cursor.execute("INSERT INTO times (time) VALUES ('" + t + "')")
     connect.commit()
