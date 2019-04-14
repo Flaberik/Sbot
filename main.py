@@ -25,7 +25,7 @@ def about_programm():
     print('Привет! Я бот спамер для телеграмма.')
     print('Нужна справка по коммандам! Введите -> /help')
 
-@server.route("/")
+@server.route("")
     def main():
         about_programm()
 
