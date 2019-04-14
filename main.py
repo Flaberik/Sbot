@@ -102,7 +102,7 @@ def main():
             print('Комманда "' + command + '" не существует')
 #--------------------------------------------------------------
 if __name__ == "__main__":
-    server.run(host ="mighty-headland-96145.herokuapp.com", port=os.environ.get('PORT', 5000))
+    server.run( port=os.environ.get('PORT', 5000))
 server = Flask(__name__)
 '''
 if __name__ == "__main__":
