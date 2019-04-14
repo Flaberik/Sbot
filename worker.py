@@ -24,18 +24,18 @@ class Worker(threading.Thread):
         global delay_second
         delay_second = 1
         delay_pause = 1
-        print(times_)
+
         while self.status:
             if(self.pause_ == False):
                 delay_second = 1
-                print('xyi')
+                #print('xyi')
                 for t in times_:
                     if(str(t) == str(self.get_time())):
                         MBot.send_message_for_all_group()
                         delay_second = 60
                         break
 
-            time.sleep(10)
+            time.sleep(delay_second)
 
     def stop(self):
         self.status = False
