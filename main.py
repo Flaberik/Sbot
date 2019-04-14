@@ -28,10 +28,11 @@ def about_programm():
     print('Привет! Я бот спамер для телеграмма.')
     print('Нужна справка по коммандам! Введите -> /help')
 
-@server.route("/")
+
 def index():
     print('Hello')
 
+@server.route("/")
 def main():
     about_programm()
 
@@ -100,8 +101,8 @@ def main():
         else:
             print('Комманда "' + command + '" не существует')
 #--------------------------------------------------------------
-
-server.run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
+if __name__ == "__main__":
+    server.run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
 server = Flask(__name__)
 '''
 if __name__ == "__main__":
