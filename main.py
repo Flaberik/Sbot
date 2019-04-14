@@ -32,7 +32,7 @@ def about_programm():
 def index():
     print('Hello')
 
-@server.route("/")
+#@server.route("/")
 def main():
     about_programm()
 
@@ -102,7 +102,8 @@ def main():
             print('Комманда "' + command + '" не существует')
 #--------------------------------------------------------------
 if __name__ == "__main__":
-    server.run( port=os.environ.get('PORT', 5000))
+    main()
+    #server.run( port=os.environ.get('PORT', 5000))
 
 server = Flask(__name__)
 '''
