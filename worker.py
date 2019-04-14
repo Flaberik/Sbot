@@ -35,7 +35,7 @@ class Worker(threading.Thread):
                     delay_second = 60
                     break
 
-            time.sleep(10)
+            time.sleep(60)
 
     def stop(self):
         self.status = False
