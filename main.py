@@ -17,6 +17,7 @@ from collections import OrderedDict
 server = Flask(__name__)
 
 def help():
+    print('')
     print('/exit                - завершить приложение.')
     print('/pause               - приостановить бота.')
     print('/updatedata          - принудительно обновить данные о группах/каналах.')
@@ -31,7 +32,7 @@ def help():
     print('/settime             - установить время для рассылки (06:45, 13:00), по МСК.')
     print('/gettimes            - вывести все временные точки.')
     print('/deltime             - удалить временную точку.')
-
+    print('')
 #--------------------------------------------------------------
 def about_programm():
     print('')
