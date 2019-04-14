@@ -83,10 +83,8 @@ def get_times():
 
 def get_times_():
     times_ = cursor.execute("SELECT * FROM times")
-    tt = []
-    for t in times_:
-        tt.append(t[1])
-    return tt
+
+    return cursor.execute("SELECT * FROM times")
 
 def del_time(id):
     cursor.execute("DELETE FROM times WHERE id = '" + str(id) + "'")
