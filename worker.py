@@ -30,12 +30,12 @@ class Worker(threading.Thread):
                 delay_second = 1
                 #print('xyi')
                 for t in times_:
-                    if(str(t) == str(self.get_time())):
-                        MBot.send_message_for_all_group()
-                        delay_second = 60
-                        break
+                    #if(str(t) == str(self.get_time())):
+                    MBot.send_message_for_all_group()
+                    delay_second = 60
+                    break
 
-            time.sleep(delay_second)
+            time.sleep(10)
 
     def stop(self):
         self.status = False
