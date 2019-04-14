@@ -29,6 +29,9 @@ def about_programm():
     print('Нужна справка по коммандам! Введите -> /help')
 
 @server.route("/")
+def index():
+    print('Hello')
+
 def main():
     about_programm()
 
