@@ -95,7 +95,7 @@ def main():
         elif(command == '/sendall'):
             MBot.send_message_for_all_group()
         elif(command == '/get_token'):
-            print(token)
+            print('-_- А вот хуй тебе -_-')
         elif(command == '/settime'):
             t = input('HH:MM - Moscow: ')
             dbController.set_time(t)
